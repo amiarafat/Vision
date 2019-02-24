@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.khudrosoft.vision.activity.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:src="@drawable/no_picture_man" />
+
+
+        <TextView
+            android:id="@+id/user_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilePicture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Name"
+            android:textColor="@color/app_white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topPanel"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/app_white">
+
+        <TextView
+            android:id="@+id/txTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_8dp"
+            android:background="@drawable/blue_btn"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text=""
+            android:textColor="@color/app_white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txLastDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txTotal"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+
+            android:background="@drawable/blue_btn"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text=""
+            android:textColor="@color/app_white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txLastMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txLastDay"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_8dp"
+            android:background="@drawable/blue_btn"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text=""
+            android:textColor="@color/app_white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txLastMonth"
+            android:layout_margin="@dimen/margin_8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_newCampaign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/btn_campaign"
+                android:text="Fixed Campaign" />
+
+           <!-- <ImageView
+                android:id="@+id/btn_maxpro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/maxpro_btn"
+                android:text="Add new Rx" />
+-->
+
+            <ImageView
+                android:id="@+id/btn_add_new_rx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/btn_add_rx"
+                android:text="Add new Rx" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary">#292927</color>
+    <color name="colorPrimaryDark">#292927</color>
+    <color name="colorAccent">#e22d3a</color>
+
+
+    <color name="app_gray">#757677</color>
+    <color name="app_red">#e22d3a</color>
+    <color name="app_white">#ffffff</color>
+    <color name="btn_blue">#000358</color>
+
+    <color name="text_khudro_soft">#003580</color>
+
+    <color name="ash">#ECF0F5</color>
+    <color name="translucent_black">#D9000000</color>
+
+
+
+</resources>

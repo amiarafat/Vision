@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@color/btn_blue"
+        android:gravity="center">
+
+        <!--android:layout_below="@+id/map"-->
+
+        <TextView
+            android:id="@+id/titel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="sdasdasdasdasd"
+            android:textColor="@color/app_white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/data"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/titel"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="@dimen/activity_vertical_margin"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:padding="8dp"-->
+        <!--android:text="dsdads"-->
+        <!--android:textColor="@color/app_white"-->
+        <!--android:textSize="16dp" />-->
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/top"
+        android:background="@color/app_gray"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</RelativeLayout>

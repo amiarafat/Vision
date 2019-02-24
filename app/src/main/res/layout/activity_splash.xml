@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white"
+    tools:context="com.khudrosoft.vision.activity.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/RxLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/companyLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:src="@drawable/vision_solo" />
+
+
+        <ImageView
+            android:id="@+id/companyLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/vision" />
+
+
+        <ImageView
+            android:id="@+id/companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/companyLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+
+            android:src="@drawable/renata_logo_" />
+
+        <TextView
+            android:id="@+id/textview_versionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/companyName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="version 1.0" />
+
+
+        <TextView
+            android:id="@+id/textview_powered_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_versionNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/powered_by"
+            android:textColor="@color/text_khudro_soft"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

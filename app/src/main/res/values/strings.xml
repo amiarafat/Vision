@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Vision</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_log_in">Log In</string>
+    <string name="powered_by">A Creation of Khudro Soft</string>
+
+
+    <string name="text_forgot_pass">If you have forgotten your password, please enter your registered email id and click submit button</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">U-CABS DRIVER location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'U-CABS DRIVER\'.</string>
+    <string name="permission_required_toast">Location permission is required for U-CABS DRIVER</string>
+
+    <!--GOOGLE MAP KEY
+    <string name="google_maps_key">AIzaSyCWebef6TtGNe-YrkYGniSJ22wYRl6McFA</string>-->
+
+    <!--Place API key-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyABbocFM45W7-RSoRflZigMl_AjUzlatcs</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="driver_registration">Sign Up</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="forget_pass">Change Password</string>
+    <string name="change_drive_mode">Change Your Mood</string>
+
+
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_sign_up">Sign up </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_mobile_number">This mobile number is invalid</string>
+    <string name="error_password_not_match">Password not matched</string>
+
+
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <string-array name="driver_mode">
+        <item>Booked</item>
+        <item>Leisure </item>
+    </string-array>
+
+    <string name="place_details">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        <i>Place Id: %2$s</i>
+        <br/>
+        Address: %3$s
+        <br/>
+        Phone: %4$s
+        <br/>
+        Website: %5$s
+    ]]>
+    </string>
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
+    <string name="title_activity_trip_finished">TripFinishedActivity</string>
+    <string name="title_activity_change_password">Change Password</string>
+
+    <string name="nav_log_out">Log out</string>
+    <string name="title_activity_expense">Your Expense</string>
+    <string name="title_activity_privacy_policy">Disclaimer Policy</string>
+    <string name="privacy_policy">The Business Plan and other business documents prepared with a good faith and trust to improve the existing business environment of client.  After in-depth study and carefully analyzing,Assessment the input or data or statistics provided by the client these documents are prepared with due care and submitting for implementation or execution in their working system to make the business more success which includes increase customer volume, increase performance, increase efficiency, increase productivity and ultimately increase the profitability what the client is expecting during a particular period of time. \n The most important thing in a business is Implementation or Execution phase which need immediate actions by the Management at different levels, periodic review the final results, achievements, motivation to employees and more..which is a continuous process to make the business more organize, streamlined and keep on-track.  Remember, partial orpoor implementations of any business strategies will not give the better results what the client is expecting. \n While implementing the business strategies, some actions will give immediate results seen by the end users or customers, some gives after a period of some days or week or months for which the management or owner shall keep patience and keep the eyes on its till achieve 100 percent success to get maximum advantages and benefits from the strategies.  Remember, every single strategy is so important and essential to get better results. \n The Consultants will not do a magic in your business, but they can help and assist in finding the genuine lapses, GAP, short falls, pitfalls and severe discrepancies after conducting the Diagnostic detailed process and provide the best practice business solutions and strategies which ultimately lead to the road of success subject to 100 percent implementations by the Management.  Before implementing any business strategies, it shall be properly communicated to concerned Department or Section or Unit or Employee so that they can know what is going to implement and willing to  participate to make the system more value and effective.  The bottom line employees are more important in success any strategies in an organization without their contribution or participation it not possible for success the business, please make a note of this.  The employees shall be motivated in different ways which includes Reward, Award, Cash incentives, Increments etc., to attract them to be a part of Implementation Team. \n In-effective policies or procedures, complicated processes, wrong decisions, wrong actions, dirty politics etc.,   the results will always be negative and not productivity, please try to avoid those things and make a healthy business environment for all the timesto achieve the corporate goals. \n At the last, it is personally request the Management or owner to read, understand and implement the business strategies in their working system to make the business more success.  You can reach the Consultants at any time if you have any question or query even after the project completed or handed over.  Our main aim is to help or assist the business community in growing and developing their business and make their dreams become true. \n\n Wishing all the best and good luck.
+</string>
+    <string name="pick_image_intent_text">Take a photo From</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_sign_up_success_activty">Sign Up Successful</string>
+    <string name="signup_success">Thank you for sign up. Your account is now pending and you will be approved soon. Please save below pin code for further use.</string>
+    <string name="title_activity_upload_picture">Upload Profile Picture</string>
+    <string name="title_activity_history">Trip History</string>
+    <string name="no_data_available">You have no trip history</string>
+    <string name="balance_test">Balance:  SAR </string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="nav_setttings">Settings</string>
+    <string name="nav_settings">Settings</string>
+    <string name="title_activity_home">Rx Calculator</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_sumit_rx">Submit Rx</string>
+    <string name="title_activity_entry_rx">EntryRx</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_about">About Us</string>
+    <string name="title_activity_birthday">Birthday</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_notice">Notice</string>
+    <string name="title_activity_campaign">Campaign</string>
+    <string name="welcome">Welcome to Vision</string>
+    <string name="help_bottom">Our team member will contact with you soon.</string>
+    <string name="image_text">Click here to pick a Rx from Gallary</string>
+    <string name="title_activity_target">Target</string>
+    <string name="title_activity_target_activty">Target</string>
+    <string name="title_activity_maxpro_campaign">Maxpro Campaign</string>
+    <string name="title_activity_sample">SampleActivity</string>
+    <string name="title_activity_select_campaign">Select Campaign</string>
+
+
+    <string-array name="country_arrays">
+        <item>Campaign 01</item>
+        <item>Campaign 02</item>
+    </string-array>
+</resources>
