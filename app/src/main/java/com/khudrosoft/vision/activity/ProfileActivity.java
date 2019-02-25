@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -27,6 +28,11 @@ import com.squareup.picasso.Picasso;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import okhttp3.MediaType;
@@ -35,6 +41,7 @@ import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import retrofit2.http.Url;
 
 import com.khudrosoft.vision.model.ProfileResponse;
 import com.khudrosoft.vision.model.UserRow;
@@ -55,6 +62,8 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
 
     Button btnUpdate;
     TextView txtuser_Name;
+
+    File latestFile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -146,7 +155,14 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
                     String imageURl = profileResponseObj.getImageUrl();
                     String image_name = rxUser.getImage_name();
 
+
                     Picasso.get().load(imageURl + image_name).into(profilePicture);
+                    Bitmap bitmap = ((BitmapDrawable)profilePicture.getDrawable()).getBitmap();
+                    try {
+                        latestFile = getLatestImage(bitmap);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
 
                 } else {
 
@@ -180,15 +196,20 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
 
         RequestBody requestFile;
         MultipartBody.Part body;
+
         if (file != null) {
 
             requestFile = RequestBody.create(MediaType.parse("image/*"), file);
             body = MultipartBody.Part.createFormData("file", file.getName(), requestFile);
 
         } else {
-            hideNonCancalableProgressDialog();
+            /*hideNonCancalableProgressDialog();
             showToastMessage("Please Take a Profile Photo");
-            return;
+            return;*/
+
+            requestFile = RequestBody.create(MediaType.parse("image/*"), latestFile);
+            body = MultipartBody.Part.createFormData("file", latestFile.getName(), requestFile);
+
 
         }
         ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
@@ -373,4 +394,23 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
         }
     }
 
+
+    private File getLatestImage(Bitmap bitmap) throws IOException {
+        //create a file to write bitmap data
+        File f = new File(context.getCacheDir(), "myImage");
+        f.createNewFile();
+
+
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 0 /*ignored for PNG*/, bos);
+        byte[] bitmapdata = bos.toByteArray();
+
+//write the bytes in file
+        FileOutputStream fos = new FileOutputStream(f);
+        fos.write(bitmapdata);
+        fos.flush();
+        fos.close();
+
+        return f;
+    }
 }
